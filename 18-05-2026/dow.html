@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City Information Portal</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+          <h1>SMART CITY INFORMATION PORTAL</h1>
+    <center>
+        <img src="data:image/jpeg;base64,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"
+             alt="Smart City Logo"
+             width="60%"
+             height="60%">
+    </center>
+
+        <p>
+            Welcome to the future of smart living and digital urban development.
+        </p>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#transport">Transport</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+
+    </header>
+
+    <!-- MAIN SECTION -->
+
+    <main id="home">
+
+        <!-- TEXT FORMATTING -->
+
+        <section>
+
+            <h2>Text Formatting Tags</h2>
+
+            <p>
+                <b>Bold Text</b><br>
+                <strong>Important Text</strong><br>
+                <i>Italic Text</i><br>
+                <em>Emphasized Text</em><br>
+                <u>Underlined Text</u><br>
+                <mark>Highlighted Text</mark><br>
+                <small>Small Text</small><br>
+                <del>Deleted Text</del><br>
+                <ins>Inserted Text</ins><br>
+                H<sub>2</sub>O<br>
+                X<sup>2</sup><br>
+            </p>
+
+            <hr>
+
+        </section>
+
+        <!-- HEADINGS -->
+
+        <section>
+
+            <h1>Main Heading H1</h1>
+            <h2>Sub Heading H2</h2>
+            <h3>Heading H3</h3>
+            <h4>Heading H4</h4>
+            <h5>Heading H5</h5>
+            <h6>Heading H6</h6>
+
+            <p>
+                Smart cities use advanced technologies to improve transportation,
+                healthcare, education, security, and environmental sustainability.
+            </p>
+
+            <hr>
+
+        </section>
+
+        <!-- LISTS SECTION -->
+
+        <section id="services">
+
+            <h2>City Services</h2>
+
+            <h3>Ordered List</h3>
+
+            <ol>
+                <li>Smart Parking</li>
+                <li>AI Traffic Control</li>
+                <li>Online Citizen Services</li>
+            </ol>
+
+            <h3>Unordered List</h3>
+
+            <ul>
+                <li>Hospitals</li>
+                <li>Parks</li>
+                <li>Schools</li>
+                <li>Malls</li>
+            </ul>
+
+            <h3>Description List</h3>
+
+            <dl>
+                <dt>IoT</dt>
+                <dd>Internet of Things devices for automation.</dd>
+
+                <dt>AI</dt>
+                <dd>Artificial Intelligence for smart management.</dd>
+            </dl>
+
+            <h3>Nested List</h3>
+
+            <ul>
+                <li>Transportation
+                    <ul>
+                        <li>Metro</li>
+                        <li>Electric Buses</li>
+                        <li>Bike Sharing</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <hr>
+
+        </section>
+
+        <!-- IMAGE SECTION -->
+
+        <section id="gallery">
+
+            <h2>City Gallery</h2>
+
+            <figure>
+
+                <img src="https://img.freepik.com/premium-photo/beautiful-glowing-smart-city-night-time_175634-5347.jpg"
+                     alt="Smart City"
+                     width="500"
+                     height="300"
+                     title="Smart City Image">
+
+                <figcaption>
+                    Beautiful Smart City Skyline
+                </figcaption>
+
+            </figure>
+
+            <hr>
+
+        </section>
+
+        <!-- LINKS SECTION -->
+
+        <section>
+
+            <h2>Hyperlinks</h2>
+            <a href="https://oppty-html.gt.tc/index.html?i=2" target="_blank"> 
+            External Link
+            </a><br>
+            <br>
+            <a href="../dowload1/city photo.jpg" target="_blank">Internal link</a>
+            <br>
+            <h3>PDF</h3>
+            <a href ="https://eninrac.com/assets/upload/City-Profile---Hyderabad-2021.pdf" download pdf>download
+            </a>
+            <br>
+            <a href="mailto:smartcity@gmail.com">
+             Send Email
+             </a><br>
+
+              <a href="tel:+919999999999">
+               Call us
+               </a>
+               <hr>
+        </section>
+
+        <!-- TABLE SECTION -->
+
+        <section id="transport">
+
+            <h2>Bus Timetable</h2>
+
+            <table border="1">
+                    <tr>
+                        <th>Bus</th>
+                        <th>Station</th>
+                        <th>Timing</th>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">A1</td>
+                        <td>Central Station</td>
+                        <td>6 AM - 10 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>East Station</td>
+                        <td>10 PM - 6 AM</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">
+                            Smart Transport Available for every one
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">
+                            End of Bus Table
+                        </td>
+                    </tr>
+
+            </table>
+            <hr>
+
+        </section>
+
+        <!-- AUDIO & VIDEO -->
+
+        <section>
+
+            <h2>Multimedia Section</h2>
+
+            <h3>Audio</h3>
+
+            <audio controls autoplay muted loop>
+                <source src="../dowload1/audio 1.mp3">
+            </audio>
+
+            <h3>Video</h3>
+
+            <video controls autoplay unmuted loop height="20%" width="20%">
+                <source src="../dowload1/mixkit-going-down-a-curved-highway-through-a-mountain-range-41576-hd-ready.mp4">
+
+            </video>
+
+            <hr>
+
+        </section>
+
+        <!-- IFRAME SECTION -->
+
+        <section>
+
+            <h2>IFrame Section</h2>
+
+            <h3>YouTube Video</h3>
+
+            <iframe width="560"
+                    height="315"
+                  src="https://www.youtube.com/embed/8dJyRm2jJ-U?si=t5BBm3PSRtglu8qm" title="YouTube video player" allowfullscreen></iframe>">
+            </iframe>
+
+            <h3>Google Maps</h3>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30905.84529520758!2d78.80360191295473!3d14.471440203963368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb37210d4f26f87%3A0xaf158859a18a02a0!2sKadapa%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1779102001119!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+            <hr>
+             <h3>Website</h3>
+
+            <iframe
+                src="https://theoppty.com/EMPLOYEEOPpty/attendance/attendance.html"
+                width="600"
+                height="400">
+            </iframe>
+<hr>
+        </section>
+
+        <!-- FORM SECTION -->
+
+        <section id="registration">
+
+            <h2>Citizen Registration Form</h2>
+
+            <form>
+
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" placeholder="Enter Name"><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" name="email" placeholder="Enter Email"><br><br>
+
+                <label>Password:</label><br>
+                <input type="password" pattern="[A-za-z0-9@#$%]{8,12}"><br><br>
+
+                <label>Phone:</label><br>
+                <input type="tel"><br><br>
+
+                <label>Age:</label><br>
+                <input type="number" min="10" max="90"><br><br>
+
+                <label>Date of Birth:</label><br>
+                <input type="date"><br><br>
+
+                <label>Time:</label><br>
+                <input type="time"><br><br>
+
+                <label>Choose Color:</label><br>
+                <input type="color"><br><br>
+
+                <label>Upload ID Proof:</label><br>
+                <input type="file"><br><br>
+
+                <label>city range</label><br>
+                <input type="range"><br><br>
+
+                <label>Gender:</label><br>
+
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+                <br><br>
+
+                <label>Services Required:</label><br>
+
+                <input type="checkbox"> Transport
+                <input type="checkbox"> Healthcare
+                <input type="checkbox"> Parking
+                <br><br>
+
+                <label>Select Area:</label><br>
+
+                <select>
+                    <option>Downtown</option>
+                    <option>North Zone</option>
+                    <option>South Zone</option>
+                </select>
+
+                <br><br>
+
+                <label>Feedback:</label><br>
+
+                <textarea rows="5" cols="20"></textarea>
+
+                <br><br>
+
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+
+            </form>
+            <hr>
+        </section>
+            <hr>
+            <sectio>
+                <h1>Entitys </h1>
+                <p> 5 &lt; 10</p>
+                <p> 10 &gt; 5</p>
+                <p>&copy;  copy</p>
+                <p>&reg;  reg</p>
+                <p>&trade; trade</p>
+                <p>&euro; euro</p>
+                <p>&pound; pound</p>
+                <p>&yen; yen</p>
+                <p>&cent; cent</p>
+                <p>&dollar; dollar</p>
+                <br>
+                <p>&times; multi</p>
+                <p>&divide; division</p>
+                <p>&plusmn; plus-minus</p>
+                <p>&amp;female;<pre>&female;</pre></p>
+            </sectio>
+
+<hr>
+        <!-- INLINE & BLOCK -->
+
+        <section>
+
+            <h2>Inline vs Block Elements</h2>
+
+            <div>
+                <style>
+                    div {
+                        background-color:lightblue;
+                    }
+                </style>
+                This is a block element using DIV.
+            </div>
+
+            <br>
+
+            <span style="background-color:yellow;">
+                This is an inline element using SPAN.
+            </span>
+
+            <hr>
+
+        </section>
+
+        <!-- ARTICLE SECTION -->
+
+        <article>
+
+            <h2>AI Transportation System</h2>
+            
+            <abbr title="Artificial Intelligence">
+                AI
+            </abbr>
+
+            <p>
+                Artificial Intelligence helps in managing traffic,
+                reducing accidents, and improving public transport efficiency.
+            </p>
+
+            <blockquote>
+                "Technology makes cities smarter and lives easier."
+            </blockquote>
+
+            <br>
+
+        </article>
+
+        <!-- ASIDE SECTION -->
+
+        <aside>
+
+            <h2>Latest News</h2>
+
+            <ul>
+                <li>New metro route launched</li>
+                <li>Free WiFi available in parks</li>
+                <li>Electric buses added</li>
+            </ul>
+
+            <h1>detail and summary</h1>
+             <details>
+
+                <summary>Why are smart cities important?</summary>
+
+                They improve transportation, safety, and sustainability.
+
+            </details>
+
+        </aside>     
+
+    </main>
+<hr>
+    <!-- FOOTER -->
+
+    <footer id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            &copy; 2026 Smart City Information Portal
+        </p>
+
+        <p>
+            Email: smartcity@gmail.com</p>
+
+        <p> Phone: +91 9955938977</p>  
+
+       <a href="https://www.instagram.com/reels/DX_tv2-x5zQ/" target="_blank">Instagram</a>
+
+    </footer>
+
+</body>
+</html>
+
