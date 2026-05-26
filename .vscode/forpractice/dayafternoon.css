@@ -1,0 +1,35 @@
+.head {
+    display: flex;
+}
+#fornav {
+margin-left: 600px ;
+color:black;
+}
+#fornav a{
+    text-decoration: none;
+    color: black;
+}
+ div a {
+    gap:10px;
+}
+
+
+.bod {
+    display: flex;
+}
+.side {
+align-items: end;
+width: 50%;
+height: 25%;
+}
+.side img {
+    border-radius:40px ;
+}
+
+.foot {
+    text-align: center;
+}
+button:hover {
+color: aqua;
+text-decoration: underline;
+}
