@@ -1,0 +1,56 @@
+body {
+    display: flex;
+  justify-content: center;
+  
+}
+.maindiv {
+   width:600px;
+   height:auto;
+   border: 2px solid black;
+   margin: 20px;
+   border-radius: 20px;
+}
+.firstdiv {
+display: flex;
+text-align: center;
+background-color: orange;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+.firstdiv img{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 120px;
+    margin-right: 10px;
+    margin-top:10px;
+    background-color: white;
+}
+
+.seconddiv {
+    display: flex;
+}
+.seconddiv img{
+   width: 300px;
+   height: 350px;
+   margin-right: 50px;
+   border-bottom-left-radius: 20px;
+}
+
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.underdiv {
+    display: flex;
+}
+.underdiv p{
+    text-decoration: overline;
+    margin-top: 50px;
+}
+.underdiv img{
+    height: 100px;
+    width: 100px;
+}
