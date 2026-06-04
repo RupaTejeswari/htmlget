@@ -1,0 +1,70 @@
+.div1{
+    display:block ;
+    background-color: aqua;
+   
+}
+.div2{
+    display:inline ;
+    background-color: rgb(95, 252, 200);
+    color: rgb(109, 92, 124);
+   
+}
+.div3{
+    display:inline-block ;
+    background-color: rgb(169, 110, 38);
+  
+}
+.div4{
+    display:none;
+    background-color: blue;
+}
+.div5{
+    display:list-item;
+    background-color: brown;
+    margin-left: 20px;
+}
+.table{
+    display: table;
+}
+.row1{
+    display: table-row;
+   
+}
+.cell1{
+    display: table-cell;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: aqua;
+}
+
+.cell2{
+    display: table-cell;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: aquamarine;
+}
+.vis1{
+    visibility: hidden;
+}
+.vis2{
+    visibility: collapse;
+}
+.vis3{
+    background-color: aquamarine;
+}
+.grid1{
+    display: grid;
+      grid-template-columns: 2fr 2fr;
+    background-color: bisque;
+   
+}
+.grid1 p{
+    background-color: rgb(99, 63, 63);
+    padding: 20px;
+    margin: 5px;
+}
+.grid2{
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    background-color: blueviolet;
+}
