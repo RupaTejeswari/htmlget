@@ -1,0 +1,118 @@
+
+ .sap{
+    background-color: darkblue;
+    color:white;
+    display: flex;
+}
+.sap h1{
+ padding-left: 10px;
+}
+#id1{
+    padding-top: 20px;
+padding-left: 600px;
+display: flex;
+gap:20px;
+}
+a[target="_blank"]:hover{
+    height: 20px;
+    color:rgb(61, 57, 52);
+   background-color:yellow; 
+   cursor: pointer;
+   text-decoration: underline;
+}
+
+.header{
+    background-color: rgb(186, 140, 230);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+button{
+background-color:rgb(140, 39, 163);
+color:white;
+border-radius: 10px;
+padding: 10px;
+
+}
+.header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.nav1 {
+    background-color: aquamarine;
+    
+}
+.nav h1{
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+}
+.nav div{
+   display: flex;    
+   align-items: center;
+   
+}
+.few img{
+    padding-left: 40px;
+    height: 150px;
+    width: 150px;
+    padding-bottom: 10px;
+}
+
+.art{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.art1 {
+height: 350px;
+width: auto;
+background-color: aliceblue;
+text-align: center;
+}
+.art2 {
+height: 350px;
+width: auto;
+background-color: aliceblue;
+text-align: center;
+}
+.art3 {
+height: 350px;
+width: auto;
+background-color: aliceblue;
+text-align: center;
+}
+.foot1{
+    background-color: rgb(63, 186, 104);
+    padding-bottom: 20px;
+     padding-top: 10px;
+}
+.foot1 h1{
+    display: flex;
+ justify-content: center;
+
+}
+.foot1 form{
+  display: flex;
+ justify-content: space-evenly;
+   
+}
+
+.foot2{
+    background-color: darkblue;
+    color: white;
+    display: flex;   
+}
+.foot2 .div2{
+    padding-top: 10px;
+    padding-left: 600px;
+    display: flex;
+      gap:30px;
+}
+
+
