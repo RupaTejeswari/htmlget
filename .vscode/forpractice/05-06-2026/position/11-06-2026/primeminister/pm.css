@@ -1,0 +1,139 @@
+
+.head1{
+    background-color: rgba(30, 22, 22, 0.495);
+    color: white;
+ display: flex;
+ justify-content: center;
+ gap:20px;
+ padding: 10px;
+
+}
+.skip{
+    display: flex;
+    align-items: center;
+}
+.skip a{
+    text-decoration: none;
+    color:white;
+}
+.a1{
+    border: 2px solid yellow;
+    padding: 2px 5px;
+}
+.a1:hover{
+    background-color: rgb(198, 198, 90);
+    border: 2px solid black;
+    cursor: pointer;
+}
+.a21{
+    background-color: black;
+    padding: 1px 10px;
+}
+.a22{
+    background-color: white;
+    color:black;
+     padding: 1px 10px;
+    margin-right: 5px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.form{
+    display: flex;
+    align-items: center;
+}
+.form input{
+    border: 2px solid yellow;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-style: italic; 
+}
+.form label{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.form select{
+    font-size:20px ;
+}
+ /* first 2 div */
+ .head2{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+     background-color: orange;
+ }
+ .head2 a{
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+ }
+  /* head completed */
+  .h1{
+    text-align: center;
+  }
+  .section1 img{
+   width:100%;
+   height:300px;
+   background-color: rgb(115, 87, 50);
+  }
+  .section2 img{
+     width: 200px; 
+     height: 200px;
+     padding-left: 10px;
+  }
+  .section1 p{
+   text-align: center;
+   color: orange;
+  }
+ .divaa{
+    display: flex;
+    padding-bottom: 10px;
+   
+ }
+ .sect1{
+    width: 50%;
+    display: flex;
+ }
+ .sect2{
+    width: 50%;
+    display: flex;
+    margin-left: 10px;
+ }
+ .divbb{
+    display: flex;
+ }
+  .sect3{
+    width: 50%;
+    display: flex;
+    
+ }
+  .sect4{
+    width: 50%;
+    display: flex;
+      margin-left: 10px;
+ }
+ .button1{
+   background-color: yellow;
+   padding: 10px;
+   border: none;
+   margin-top: 10px;
+   margin-left:40%;
+ }
+ .pm{
+    display: flex;
+ }
+ /* Grid use */
+ .slid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    column-gap: 20px;
+    background-color: bisque;
+    text-align: center;
+ }
+ .slid1 span{
+    font-size: 20px;
+ }
+#D21{
+    background-color: rgb(86, 36, 36);
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="pm.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="container">
+    <div class="header">
+      <div class="head1">
+        <div class="skip"><a href="#id1">Skip to main content</a></div>
+        <div class="a1">A<sup>-</sup></div>
+        <div class="a1">A</div>
+        <div class="a1">A<sup>+</sup></div>
+        <div class="a21">A</div>
+        <div class="a22">A</div>
+        <div class="icon">
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-regular fa-m"></i>
+        </div>
+        <div class="form">
+          <form>
+            <input type="text" placeholder="Search">
+            <label>Language</label>
+            <select>
+              <option>English</option>
+              <option>Hindu</option>
+              <option>Tamil</option>
+              <option>Bengali</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <!-- first 2 div -->
+      <div class="head2">
+        <h1 class="menu">Menu</h2>
+          <h2 class="home"><a href="#di2">🏠HOME</a></h2>
+      </div>
+    </div>
+    <!-- header part is fixed and completed -->
+    <div class="section1">
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="pm not found">
+      <p>°°°°°°°°°°°</p>
+    </div>
+    <h1 class="h1">News Updates</h1>
+
+
+    <div class="section2">
+
+      <div class="divaa">
+        <div class="sect1">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2023/07/default_Thumbnails-03.jpg"
+            alt="pm2 not found">
+          <div>
+            <span>
+              <b>PM emphasizes the Government's efforts
+                to further women-led development across diverse sectors</b>
+
+              12 Jun, 2026
+              Prime Minister Shri Narendra Modi today stated that over the last 12 years, the Government has worked to
+              further women-led development, which is visible across sectors.</span>
+          </div>
+        </div>
+        <div class="sect2">
+
+          <img
+            src="https://www.pmindia.gov.in/wp-content/uploads/2026/06/Prime-Minister-expresses-sadness-over-the-passing-of-Shri-Jaspal-Rana-Ji.jpg"
+            alt="pm2 not found">
+          <div><span>
+              <b>Chief Minister of Uttar Pradesh meets PM</b>
+              11 Jun, 2026
+              Chief Minister of Uttar Pradesh, Shri Yogi
+              Adityanath met Prime Minister, Shri Narendra Modi
+              today in New Delhi.
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+      <div class="divbb">
+        <div class="sect3">
+          <img
+            src="https://www.pmindia.gov.in/wp-content/uploads/2026/06/Chief-Minister-of-Uttar-Pradesh-meets-Prime-Minister.jpg"
+            alt="pm2 not found">
+          <div>
+            <span>
+              <b>Chief Minister of Tamil Nadu meets PM</b>
+              11 Jun, 2026
+              Chief Minister of Tamil Nadu, Thiru C. Joseph Vijay
+              met Prime Minister, Shri Narendra Modi
+              today in New Delhi.
+            </span>
+          </div>
+
+        </div>
+
+
+        <div class="sect4">
+          <img
+            src="https://www.pmindia.gov.in/wp-content/uploads/2026/06/Chief-Minister-of-Tamil-Nadu-meets-Prime-Minister.jpg"
+            alt="pm2 not found">
+          <div>
+            <span>
+              <b>Chief Minister of Telangana meets PM</b>
+              11 Jun, 2026
+              Chief Minister of Telangana, Shri Revanth Reddy met
+              Prime Minister,Shri Narendra Modi
+              today in New Delhi.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <button class="button1">VIEW MORE</button>
+  <!-- gallery -->
+  <div class="pm">
+    <div>
+      <img src="https://www.pmindia.gov.in/wp-content/themes/pmindia2015/images/gallery-photo.jpg" alt="img of pm">
+    </div>
+    <div>
+      <img src="https://www.pmindia.gov.in/wp-content/themes/pmindia2015/images/gallery-radio.jpg" alt="img of pm">
+    </div>
+    <div>
+      <img src="https://www.pmindia.gov.in/wp-content/themes/pmindia2015/images/gallery-video.jpg" alt="img of pm">
+    </div>
+    <div>
+      <img src="https://www.pmindia.gov.in/wp-content/themes/pmindia2015/images/gallery-speech.jpg" alt="img of pm">
+    </div>
+
+  </div>
+  <!-- gallery end -->
+  <div class="slid">
+    <div class="slid1">
+      <h1>Governance Track Record</h1>
+      <span>Our Mantra should be: ‘Beta Beti, Ek Samaan’ "Let us celebrate the birth of the girl child. We should be
+        equally proud of our daughters. I urge you to sow five plants when your daughter is born to celebrate the
+        occasion." -PM Narendra Modi to citizens of his adopted village Jayapur. Beti Bachao Beti Padhao (BBBP) was
+        launched by the Prime Minister on 22nd January, 2015 at Panipat, Haryana. BBBP addresses the declining Child Sex
+        Ratio (CSR) and related issues of women empowerment over a life-cycle continuum. It is a tri-ministerial effort
+        of Ministries of Women and Child Development, Health & Family ...</span>
+      <button>View More</button>
+    </div>
+    <div clas="gridcont">
+      <div id="D21">
+        <img src="https://www.pmindia.gov.in/wp-content/themes/pmindia2015/images/know-the-pm.jpg" alt="pm modi not found" width="200px" height="200px">
+        <h1>Know the PM</h1>
+        <span>Dynamic, dedicated and determined, Narendra Modi arrives as a ray of hope in the lives of a billion indians</span>
+        <button>Read More</button>
+      </div>
+
+      <div id="D22">
+        <h1>FORMER PRIME MINISTERS</h1>
+        <div>
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/manmohan_singh.jpg" height="50px"
+            width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/atal2.jpg" height="50px" width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/gujral1.jpg" height="50px" width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/gowda2.jpg" height="50px" width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/atal2.jpg" height="50px" width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/rao2.jpg" height="50px" width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/shekhar2.jpg" height="50px" width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/shekhar2.jpg" height="50px" width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/rajiv2.jpg" height="50px" width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/vpsingh2.jpg" height="50px" width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/indira2.jpg" height="50px" width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/charan1.jpg" height="50px" width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/desai1.jpg" height="50px" width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/indira2.jpg" height="50px" width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/gulzari2.jpg" height="50px" width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/shashtri2.jpg" height="50px" width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/gulzari2.jpg" height="50px" width="50px">
+          <img src="https://www.pmindia.gov.in/wp-content/uploads/2014/06/nehru2.jpg" height="50px" width="50px">
+        </div>
+      </div>
+    </div>
+
+    <div>
+     <h1>PM's Profile</h1>
+     <span>Shri Narendra Modi was sworn-in as India’s Prime Minister for the third time on 9th June 2024, following another decisive victory in the 2024 Parliamentary elections. This victory marked the third consecutive term for Shri Modi, further solidifying his leadership. The 2024 elections saw a remarkable voter turnout, with a significant portion of the electorate showing continued confidence in Shri Modi’s leadership and vision for the country. His campaign focused on a blend of economic development, national security, and social welfare programs, which resonated widely with the populace. Shri Modi's third term is expected to build on the foundations laid during his ...</span>
+     <button>View More</button>
+    </div>
+
+  </div>
+
+  </div>
+</body>
+
+</html>
