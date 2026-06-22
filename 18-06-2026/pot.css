@@ -1,0 +1,199 @@
+#img1 img{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    
+}
+.homesectionn{
+    position: fixed;
+    top:10px;
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+.lastpart,.icons,.anchor,.small{
+position: absolute;
+}
+
+.small{
+top:40px;
+left:30px;
+}
+.anchor{
+top:50px;
+right: 300px;
+display: flex;
+gap:40px;
+}
+.anchor a{
+    text-decoration: none;
+    color: black;
+}
+.anchor a:hover{
+    color: rgb(184, 119, 86);
+}
+.icons{
+top:50px;
+right: 30px;
+display: flex;
+gap: 10px;
+}
+.lastpart{
+    color:white;
+    top:25%;
+    left:25%;
+}
+.lastpart .p1{
+    font-size: 80px;
+    max-width: 700px;
+    margin-top: 10px;
+}
+.lastpart .p2{
+    font-size:15px;
+    margin-top: -35px;
+}
+.button1{
+     position: fixed;
+    z-index: 1000;
+    bottom:90px;
+    right:10px;    
+}
+.button1 a{
+    display: flex;
+   padding-bottom: 10px;
+   
+}
+.button1 button{
+    width: 140px;
+    height: 60px;
+    border: none;
+    
+    /* photos section */
+}
+.potimages{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding:120px 60px;
+}
+.photos{
+    text-align: center;
+    padding-right: 70px;
+}
+/* gallery section */
+.gallery{
+    background-color: rgb(250, 245, 240);
+    padding: 50px 30px;
+ 
+}
+.gallery p{
+text-align:justify;
+padding-left: 300px;
+padding-right: 300px;
+line-height: 1.5;
+padding-bottom: 40px;
+color:rgb(130, 126, 126);
+}
+.grid{
+    width: 100%;
+    height: auto;
+}
+.pt img{
+  width: 100%;
+  height: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+      /* grid-auto-rows: 1fr; */
+      grid-template-rows: auto;
+    gap:10px;
+}
+#d1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+#d8{
+    grid-column: 3/5;
+}
+/* gallery part completed */
+.subscribe{
+    position: relative;
+}
+.subscribe img{
+    width: 100%;
+}
+.mail{
+    position: absolute;
+    top: 50%;
+    left:30%;
+    color: white;
+}
+.mail form input{
+   background: transparent;
+    border: 2px solid white;
+    padding: 15px 170px 15px 30px;
+}
+.mail ::placeholder{
+    color:white;
+   
+}
+.mail button{
+    margin-left: -10px;
+     border: 2px solid white;
+     padding: 15px 70px;
+     color:black;
+}
+/* Products  and there cost */
+.product h1,h2,p{
+text-align: center;
+}
+
+.product1 img{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+.cost{
+    display: flex;
+    padding: 20px 40px;
+}
+#sale1,#sale2{
+    position: relative;
+}
+#sale1 button,#sale2 button{
+    position: absolute;
+    top:-5px;
+    left:30px;
+    padding: 20px 10px;
+    border-radius: 50%;
+    background-color: rgb(152, 196, 217);
+    color:white;
+     border: none;
+}
+/* #sale1 a,#sale2 a{
+background-image:url(rupa);
+background-repeat: no-repeat;
+background-position: center;
+}
+#sale1 a:hover, #sale2 a:hover{
+position: relative;
+z-index: 2;
+cursor: pointer;
+} */
+ .footer{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .footfoot{
+    display: flex;
+ }
+ .footfoot img{
+    padding: 10px 300px;
+ }
+ .footfoot a{
+text-decoration: none;
+padding-left: 20px;
+padding-top: 10px;
+ }
+.foothead{
+    background-color: rgb(250, 244, 237);
+}
