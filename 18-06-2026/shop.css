@@ -1,0 +1,137 @@
+.img1 img{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    
+}
+.homesectionn{
+    position: fixed;
+    top:10px;
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+.lastpart,.icons,.anchor,.small{
+position: absolute;
+}
+
+.small{
+top:40px;
+left:30px;
+}
+.anchor{
+top:50px;
+right: 300px;
+display: flex;
+gap:40px;
+}
+.anchor a{
+    text-decoration: none;
+    color: black;
+}
+.anchor a:hover{
+    color: rgb(184, 119, 86);
+}
+.icons{
+top:50px;
+right: 30px;
+display: flex;
+gap: 10px;
+}
+.lastpart{
+    color:white;
+    top:20%;
+    left:35%;
+}
+.lastpart .p1{
+    font-size: 80px;
+    width: 700px;
+    margin-top: 10px;
+    color: black;
+}
+.lastpart .p2{
+    font-size:15px;
+    margin-top: -55px;
+     color:rgb(186, 125, 95);
+   padding-bottom: 60px;
+}
+.button1{
+     position: fixed;
+    z-index: 1000;
+    bottom:90px;
+    right:10px;    
+}
+.button1 a{
+    display: flex;
+   padding-bottom: 10px;
+   
+}
+.button1 button{
+    width: 140px;
+    height: 60px;
+    border: none;
+}
+.shop{
+    display: flex;
+    padding-top: 30px;
+}
+.format{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+     color: rgb(140, 135, 135);
+}
+.format select{
+    padding: 10px 20px;
+    color: rgb(140, 135, 135);
+    border: 1px solid rgb(105, 102, 102);
+}
+.a img{
+    width: 250px;
+    height: 300px;
+}
+.grida{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 30px 60px;
+    gap:10px;
+}
+.b{
+    display: flex;
+}
+.b img{
+width: 80px;
+height: 100px;
+}
+.c {
+    padding-left: 20px;
+}
+/* .d form input[type="range"]{
+    color: black;
+} */
+ .d button{
+    padding: 20px 30px;
+    border: none;
+    color: white;
+    background-color:rgb(186, 125, 95);
+ }
+ .footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+ }
+ .footfoot{
+    display: flex;
+ }
+ .footfoot img{
+    padding: 10px 300px;
+ }
+ .footfoot a{
+text-decoration: none;
+padding-left: 20px;
+padding-top: 10px;
+ }
+.foothead{
+    background-color: rgb(250, 244, 237);
+    margin-top: 30px;
+}
