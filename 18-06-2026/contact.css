@@ -40,7 +40,7 @@ gap: 10px;
 .lastpart{
     color:white;
     top:20%;
-    left:35%;
+    left:25%;
 }
 .lastpart .p1{
     font-size: 80px;
@@ -85,8 +85,100 @@ gap: 10px;
 .contact2 button{
    padding: 20px 350px 20px 40px;  
    background-color:rgb(186, 125, 95); 
+   border: none;
+   color: white;
 }
-.contact1 img{
-width: 500px;
-height: 500px;
+.contact2 button:hover{
+    background-color: black;
+}
+
+.subscribe {
+    position: relative;
+}
+
+.subscribe img {
+    width: 100%;
+}
+
+.mail {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: white;
+}
+
+.mail form input {
+    background: transparent;
+    border: 2px solid white;
+    padding: 15px 170px 15px 30px;
+}
+
+.mail ::placeholder {
+    color: white;
+
+}
+
+.mail button {
+    margin-left: -10px;
+    border: 2px solid white;
+    padding: 15px 70px;
+    color: black;
+}
+
+/* Products  and there cost */
+.product h1,
+h2,
+p {
+    text-align: center;
+}
+
+.product1 img {
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+
+.cost {
+    display: flex;
+    padding: 20px 40px;
+}
+
+#sale1,
+#sale2 {
+    position: relative;
+}
+
+#sale1 button,
+#sale2 button {
+    position: absolute;
+    top: -5px;
+    left: 30px;
+    padding: 20px 10px;
+    border-radius: 50%;
+    background-color: rgb(152, 196, 217);
+    color: white;
+    border: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footfoot {
+    display: flex;
+}
+
+.footfoot img {
+    padding: 10px 300px;
+}
+
+.footfoot a {
+    text-decoration: none;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.foothead {
+    background-color: rgb(250, 244, 237);
 }
