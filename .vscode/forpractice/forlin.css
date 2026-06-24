@@ -1,0 +1,23 @@
+#out-box {
+background-color: rgb(130, 130, 225);
+text-align: center;
+color: white;
+}
+#in-box {
+    color:white;
+    margin-left: 20px;
+    padding-left: 50px;
+    text-align: left;
+}
+.h1 {
+    color:rgb(98, 216, 98);
+}
+h2 + p {
+    color:black;
+}
+.p4,.p5 {
+color:brown;
+}
+img {
+    border-radius: 40%;
+}
