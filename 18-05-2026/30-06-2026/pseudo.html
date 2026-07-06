@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pseudo.css">
+</head>
+
+<body>
+    <div class="ani">
+       
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuZdsA5z2Sr4pAB5du-1_M4K3o5WaD2cCSy_wUaj1d4Q&s=10"
+                alt="" style="width: 200px; height: 50px;">
+            <h2>CSS TutorialSpot</h2>
+       
+        <div class="links">
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="./element.html">pseudo</a>
+            <a href="./animation.html">animation</a>
+        </div>
+    </div>
+    <hr>
+    <div class="animation">
+          <h1>Animation</h1>
+        <p>Well come to css anmation world.
+            css animation are applied to HTM elements that allow them to move , change color,resize, fade,rotate and
+            some more.
+            This brings motion and personality to static elements.</p>
+
+        <ul>
+            <li>To create animation in css, we need two main concepts they are:</li>
+            <ol>
+                <li>Keyframes</li>
+                <li>animation properties</li>
+            </ol>
+        </ul>
+    </div>
+    <hr>
+    <div class="op">
+        <div class="pro1">
+            <h3>Animation properties</h3>
+            <p>
+                To apply your @keyframes to an HTML element, you attach specific animation sub-properties:<br>
+
+                animation-name: The name of your @keyframes (e.g., slideAndColor).<br>
+
+                animation-duration: How long one cycle takes (e.g., 3s or 500ms).<br>
+
+                animation-timing-function: The speed curve (e.g., linear, ease, ease-in-out).<br>
+
+                animation-delay: Waiting time before the animation starts (e.g., 1s).<br>
+
+                animation-iteration-count: Number of times it plays (e.g., 3 or infinite).<br>
+
+                animation-direction: Plays forward, backward, or alternates (normal, reverse, alternate).<br>
+
+                animation-fill-mode: Styles applied before/after it plays (none, forwards, backwards, both).<br>
+
+                animation-play-state: Pauses or runs the animation (running, paused).<br>
+
+                The Shorthand SyntaxInstead of writing out every individual sub-property, you can compress them into a
+                single, clean animation property line.
+                Order: name | duration | timing-function | delay | iteration-count | direction | fill-mode
+            </p>
+        </div>
+        <div class="pro2">
+            <h3>Keyframes</h3>
+            <p>
+                keyframes are used to define the stage of an animation.<br>
+                Each keyframe describe how the element should look at a specific moment during the animation.<br>
+                →use percentage values(like 0% to 100%) or keywords(like from and to) to specify the beginning and end
+                of the animation<br>
+            </p>
+            <h3>css syntax</h3>
+            <p> →type 1</p>
+            <pre>
+  @keyframes slideAndColor {
+  0% {
+    transform: translateX(0);
+    background-color: red;
+  }
+  50% {
+    transform: translateX(100px);
+    background-color: yellow;
+  }
+  100% {
+    transform: translateX(200px);
+    background-color: green;
+  }
+}
+            </pre>
+            <p>→type 2</p>
+            <pre>
+ @keyframes myAnimation {
+  from {
+    background-color: red;
+}
+  to {
+    background-color: yellow;
+}
+}
+            </pre>
+        </div>
+
+    </div>
+
+<div class="seudo">
+    <div class="class">
+        <h2>pseudo class</h2>
+        <p>A CSS pseudo-class is a keyword added to a selector that styles an HTML element based on its special state or user interaction.</p>
+<p id="id1">:hover: Triggers when a cursor moves over an element.<br>
+    :focus: Triggers when an element receives focus, like a text field or link clicked via keyboard.<br>
+    :active: Triggers while an element is being clicked or activated.<br>
+    :visited: Targets links the browser history shows have been clicked<br>
+    :first-child: Selects the first child element inside its parent container.<br>
+    :last-child: Selects the absolute last child inside its parent container.<br>
+    :nth-child(n): Selects children using numbers, keywords (even, odd), or functional formulas (e.g., 3n+1).<br>
+    :first-of-type: Selects the first child element matching that specific tag name.<br>
+    :only-child: Selects an element if it is the solitary child in that container.<br>
+    :checked: Targets activated checkboxes, radio inputs, or option elements.<br>
+    :disabled: Targets fields that are currently non-interactive.
+</p>
+</div>
+    <div class="element">
+ <h2>pseudo elements</h2>
+ <p>A CSS pseudo-element is a keyword added to a selector that lets you style a specific, abstract part of an HTML element without altering the actual HTML markup.</p>
+ <p id="id2">
+    ::before: Inserts a virtual child element at the very beginning of the target.<br>
+    ::after: Inserts a virtual child element at the very end of the target.<br>
+    ::first-letter: Targets the first letter of a block container text to build stylized drop caps.<br>
+    ::first-line: Styles only the first rendered line of text, automatically updating if the viewport resizes.<br>
+    ::placeholder: Customizes the text styling inside structural input or textarea placeholders.<br>
+    ::selection: Alters the background highlighting and color when text is active/highlighted by a user's cursor.<br>
+    ::marker: Targets the bullet points of unordered lists or numeric indicators on ordered lists
+ </p>
+    </div>
+</div>
+
+    <p style="background-color: rgb(187, 211, 99); padding: 40px 20px; text-align: center; margin-top: -30px;">© All
+        Right Reserved By RupaTejeswari</p>
+
+</body>
+
+</html>

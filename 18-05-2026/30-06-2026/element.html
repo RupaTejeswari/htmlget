@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p{
+        width: 300px;
+    }
+    .p1{
+         background-color: aquamarine;
+    }
+    .p1:hover{
+    background-color:aqua ;
+    }
+    .p1::before{
+        content: "oooo";
+        color: rgb(207, 244, 26);
+      
+    }
+    .p1::after{
+    content:"oooo";
+    color: rgb(60, 19, 226);
+   
+    }
+    .p2::first-letter{
+        line-height: 5;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:blue;
+    }
+    .p2::first-line{
+        color:aqua;
+    }
+form button:focus{
+background-color: aqua;
+}
+form ::placeholder{
+    color: blueviolet;
+}
+a:visited{
+color:aqua;
+}
+a:active{
+color:brown;
+}
+</style>
+<body>
+    <p class="p1">Triggers when a cursor moves over an element.</p>
+    <p class="p2">Triggers when an element receives focus, like a text field or link clicked via keyboard.
+        Triggers when an element receives focus, like a text field or link clicked via keyboard.
+    </p>
+    <a href="">link</a>
+
+    <br><form>
+     <input type="text" placeholder="enter your name"><br><br>
+     <input type="email" placeholder="enter your name"><br><br>
+     <button>click me</button>
+    </form>
+</body>
+</html>
