@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    .root {
+        --text: red;
+    }
+
+    .bo1 {
+        position: relative;
+    }
+
+    .box11 {
+        position: absolute;
+        display: none;
+    }
+
+    .box11 ul li {
+        list-style: none;
+    }
+
+    .box11 ul li:nth-child(odd) {
+        background-color: aquamarine;
+    }
+
+    .box11 ul li::after {
+        content: "→";
+    }
+  
+
+    .box1:hover .box11 {
+        display: flex;
+    }
+
+    .box2 {
+        position: relative;
+    }
+
+    .box22 {
+        position: absolute;
+        display: none;
+    }
+
+    .box22 ul li {
+        list-style: none;
+        width: 130px;
+    }
+    .box22 ul li::before {
+        content: "o";
+        color: rgb(35, 118, 91);
+    }
+    
+
+    .box22 ul li:nth-of-type(2) {
+        background-color: red;
+    }
+
+    .box2:hover .box22 {
+        display: flex;
+    }
+</style>
+
+<body>
+    <div class="home">
+        <form>
+            <button id="dd1"><i class="fa-solid fa-f"></i>Flipkart</button>
+            <button id="dd2"><i class="fa-solid fa-magnifying-glass"></i>search for Product ,Brands and more</button>
+        </form>
+        <i class="fa-regular fa-circle-user" style="padding-top: 16px;"></i>
+        <div class="box1">
+            <p>Login</p>
+            <div class="box11">
+                <ul>
+                    <li><i class="fa-regular fa-circle-user"></i>My Profile</li>
+                    <li>❤️ Wishlist</li>
+                    <li>🎁 Rewards</li>
+                    <li>♦️ Flipkart</li>
+                    <li>🎁 Gift Cards</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box2">
+            <p>more</p>
+            <div class="box22">
+                <ul>
+                    <li>Become a Selier</li>
+                    <li>Notifications</li>
+                    <li>Customer care</li>
+                    <li>Advertise on Flipkart</li>
+
+                </ul>
+            </div>
+        </div>
+        <i class="fa-solid fa-cart-arrow-down" style="padding-top: 16px;"></i>
+    </div>
+    <!-- header section -->
+    <div class="hero">
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/2400/1706/image/cc12b8a4642a606f.jpg?q=60" alt="">
+       
+        <form>
+            <input type="text" placeholder="lucky day">
+        </form>
+      
+    </div>
+    <!-- hero section -->
+    <div class="order">
+        <div class="ord" id="d1">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/480/560/image/c1d1346d4628a191.jpg?q=60" alt="">
+            <h3>Gaming headsets</h3>
+            <pre>just <del>$5000</del>  $4,999</pre>
+            <button>NEW</button>
+        </div>
+
+        <div class="ord" id="d2">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/480/560/image/45378e8f9b140a95.jpg?q=60" alt="">
+            <h3>wired headsets</h3>
+            <pre>just <del>$3000</del> $2,999</pre>
+            <button>NEW</button>
+        </div>
+
+        <div class="ord" id="d3">
+            <img src="https://rukminim2.flixcart.com/image/638/638/xif0q/headphone/p/0/g/-enriched-transparent-original-imahhfz3ugghy5dv.png?q=90"
+                alt="">
+            <h3>wireless headsets</h3>
+            <pre>just <del>$6000</del> $5,999</pre>
+            <button>NEW</button>
+        </div>
+
+        <div class="ord" id="d4">
+            <img src="https://rukminim2.flixcart.com/image/638/638/xif0q/headphone/n/x/1/cnb100-eager-upto-100-hrs-music-enc-voice-changer-fast-charging-original-imahhv7ha8h2ecbe.jpeg?q=90"
+                alt="">
+            <h3>bluetooth headsets</h3>
+            <pre>just <del>$5000</del> $4,999</pre>
+            <button>NEW</button>
+        </div>
+
+    </div>
+    <!-- card section -->
+    <div class="foot">
+       
+        <p
+            style="text-align: center; background:linear-gradient(to left,rgb(91, 206, 237),rgb(230, 170, 180)); padding: 20px;">
+            ©2026 copy right for rupa.
+        </p>
+       
+    </div>
+</body>
+
+</html>
