@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header {
+        display: flex;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: antiquewhite;
+    }
+
+    .nav a {
+        padding-left: 160px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav a:hover {
+        color: cadetblue;
+        text-decoration:underline dotted;
+    }
+
+    main {
+        margin-top: 90px;
+    }
+
+    .home {
+        display: flex;
+        background-color: rgb(202, 187, 110);
+    }
+
+    .box1,
+    .box2 {
+        width: 50%;
+        padding: 20px 20px 20px 40px;
+    }
+
+    .box1 h1:hover,
+    h2:hover,
+    h3:hover {
+        color: orange;
+    }
+
+    .about {
+        background-color: aquamarine;
+        padding: 40px 20px;
+    }
+
+    .skills {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: aqua;
+        padding: 20px 20px 40px 20px;
+        margin-top: -30px;
+    }
+
+    .skills p {
+        width: 70px;
+        height: 20px;
+        padding: 10px;
+        background: linear-gradient(to right, pink, green, yellow);
+    }
+
+    .skills p:hover {
+        background: linear-gradient(to left, rgb(149, 149, 193), pink, navy, red);
+    }
+
+    .project1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: pink;
+        margin-top: -30px;
+        padding: 20px 30px 40px 30px;
+    }
+
+    .project12 {
+        background-color: chartreuse;
+        width: 300px;
+        height: 120px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .project12:hover {
+        background-color: navy;
+        color: aliceblue;
+        animation: anime 5s linear 1.5s infinite;
+    }
+
+    @keyframes anime {
+        from {
+            transform: scale(0.5);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+    .project12 a {
+        text-decoration: none;
+        color: rgb(87, 124, 158);
+    }
+
+    article p {
+        color: darkgreen;
+    }
+
+    article {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: cornflowerblue;
+        margin-top: -30px;
+
+    }
+
+    article a {
+        text-decoration: none;
+        color: black;
+        padding-top: 10px;
+        color: darkgreen;
+    }
+
+    footer {
+        background-color: darkblue;
+        color: white;
+        padding: 20px;
+        margin-top: -20px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <div>
+            <h1 style="margin-top: -10px;"> Porfolio</h1>
+        </div>
+        <nav class="nav">
+            <a href="#home">home</a>
+            <a href="#about">about me</a>
+            <a href="#skills">skills</a>
+            <a href="#project">project</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <div class="box1">
+
+                <h2>Hello, I'm</h2>
+
+                <h1>Rupa Tejeswari</h1>
+
+                <h3>Web Developer </h3>
+
+                <p>
+                    A web developer is a tech professional who builds and maintains websites and web applications using
+                    programming languages like ⁠HTML, CSS, and JavaScript. They typically specialize in building the
+                    user-facing front-end, the server-side back-end, or handle both as a full-stack developer.
+                </p>
+                <button style="padding: 12px; margin-right: 10px; background-color: chocolate; border: none;">Hire
+                    me</button>
+
+                <a href="file:///C:/Users/teja/Downloads/RupaTejeswari_Resume[1]%20(2).pdf"
+                    style="text-decoration:none; background-color: rgb(98, 160, 95); padding: 10px;">Download CV</a>
+
+            </div>
+
+            <div class="box2">
+
+                <img src="c:\Users\teja\OneDrive\Pictures\IMAGE.jpeg"
+                    style="height: 300px; width: 300px; padding-left: 50px;">
+
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h1 style="text-align: center;">ABOUT ME</h1>
+            <p style="text-align: center;">I am a Web Developer with knowledge of HTML, CSS, JavaScript, Java,Mysql. I
+                enjoy creating modern, user-friendly websites and continuously improving my
+                development skills.</p>
+        </section>
+
+        <h1 style="text-align: center; background-color: aqua; padding: 10px; margin-top: -30px;">SKILLS</h1>
+        <section class="skills" id="skills">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Java</p>
+            <p>Mysql</p>
+        </section>
+
+        <h1 style="text-align: center; background-color:pink; padding: 10px; margin-top: -30px; margin-top: -30px;">
+            PROJECT</h1>
+        <section class="project1" id="project">
+            <div class="project12">
+                <h3>Food page</h3>
+                <p>Developing food menu web page with items and cost by html and css</p>
+                <a
+                    href="C:\Users\teja\OneDrive\Documents\GitHub\htmlget\.vscode\forpractice\05-06-2026\grid.html">food</a>
+            </div>
+            <div class="project12">
+                <h3>Portfolio Website</h3>
+                <p>Designed a responsive portfolio using HTML and CSS.</p>
+                <a href="../11-06-2026/gridpos.html">portfolio</a>
+            </div>
+
+            <div class="project12">
+                <h3>Shopping Website</h3>
+                <p>Developed an e-commerce website with responsive product cards.</p>
+                <a href="C:\Users\teja\OneDrive\Documents\GitHub\htmlget\18-06-2026\shop.html">Shopping</a>
+            </div>
+
+            <div class="project12">
+                <h3>PM India website</h3>
+                <p>Created a responsive government website using HTML and CSS.</p>
+                <a href="./primeminister/pm.html">PM modi</a>
+            </div>
+
+            <div class="project12">
+                <h3>Pottery Website</h3>
+                <p>Designed a modern pottery website</p>
+                <a href="C:\Users\teja\OneDrive\Documents\GitHub\htmlget\18-06-2026\pot.html">Pottery</a>
+            </div>
+            <div class="project12">
+                <h3>CBN Website</h3>
+                <p>Responsive website by using html and css</p>
+                <a href="C:\Users\teja\OneDrive\Documents\GitHub\htmlget\18-05-2026\30-06-2026\chandrababu.html">CNB
+                    Website</a>
+            </div>
+            <div class="project12">
+                <h3>Sign in and Sing up page</h3>
+                <p>Normal sign in and sugn up page using html and basic css</p>
+                <a href="C:\Users\teja\OneDrive\Documents\GitHub\htmlget\.vscode\forpractice\01-06-2026\sigfor.html">Sign
+                    in and out</a>
+            </div>
+
+            <div class="project12">
+                <h3>school page</h3>
+                <p>basic school page by using html and basic css</p>
+                <a
+                    href="C:\Users\teja\OneDrive\Documents\GitHub\htmlget\.vscode\forpractice\01-06-2026\school.html">School</a>
+            </div>
+        </section>
+    </main>
+
+    <h1 style="text-align: center; background-color: cornflowerblue;  margin-top: -30px; padding-top: 10px;">CONTACT
+    </h1>
+    <article id="contact">
+        <p>Email:rupatejeswai@gmail.com</p>
+        <p>MobNo:(+91)9999999999</p>
+        <p>Address:Bidinamcherla(v),Kadapa(d)</p>
+        <a href="https://www.linkedin.com/in/rupa-tejeswari-aa2302270/">linked in</a>
+    </article>
+    <footer>
+        <p>© 2026 RTS | All copy rigth Reserved</p>
+    </footer>
+
+</body>
+
+</html>
