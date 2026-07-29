@@ -23,6 +23,11 @@
 
     }
 
+    .box1 a {
+        text-decoration: none;
+        color: black;
+    }
+
     .box1 img {
         width: 150px;
         height: 60px;
@@ -35,32 +40,228 @@
         padding: 10px 20px;
         margin-top: -30px;
     }
+
+    .card1 ul li {
+        line-height: 2.5;
+        list-style: none;
+        position: relative;
+    }
+
+    .card1 img {
+        position: absolute;
+        bottom: 1px;
+        width: 350px;
+    }
 </style>
 
-<body>
+<body style="background-color: rgb(255, 252, 247);">
     <div class="box1">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH-DojamNSIkyHGMYGxv1lkdroW-qJcun-ccqEVL7PZRqRM0YLAcqPYeA&s=10"
-            alt="">
-        <a aria-current="page">MENU</a>
-        <a aria-current="page">REWARDS</a>
+        <a href="ame.html"> <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH-DojamNSIkyHGMYGxv1lkdroW-qJcun-ccqEVL7PZRqRM0YLAcqPYeA&s=10"
+                alt=""></a>
+        <a aria-current="page" href="menu.html">MENU</a>
+        <a aria-current="page" href="rewards.html">REWARDS</a>
         <a>GIFT CARDS</a>
         <a style="margin-left: 200px;">Find a store</a>
         <a><button style="background-color:white; color:black">Sign in</button></a>
         <a><button style="background-color:black; color:white">join now</button></a>
     </div>
     <div class="container">
-        <div class="row align-item-center">
-            <div class="col-8">
+        <div class="row align-items-center p-5" style="background-color: rgb(242, 232, 216);">
+            <div class="col-7 text-center p-5">
                 <h4 style="color:rgb(122, 82, 60)">Starbucks® Rewards</h4>
-                <h3 style="color:rgb(44, 61, 40)">Free coffee is just the beginning</h3>
-                <p class="text-success">Join now to start enjoying exclusive benefits and unlocking more of what you love.</p>
-                <button class="bg-success text-light" style="border-radius: 20px;">join now</button>
+                <h1 class="fs-1" style="color:rgb(44, 61, 40)">Free coffee is just the beginning</h1>
+                <p class="text-success">Join now to start enjoying exclusive benefits and unlocking more of what you
+                    love.</p>
+                <button class="bg-success text-light p-3 border-0" style="border-radius: 20px;">join now</button>
             </div>
-            <div class="col-4">
-                <img src="https://www.starbucks.com/weblx/images//sr6-rewards/hero-unauth-US.png" alt="" class="border-5 w-100">
+            <div class="col-5">
+                <img src="https://www.starbucks.com/weblx/images//sr6-rewards/hero-unauth-US.png" alt=""
+                    class="border-5 w-100">
             </div>
         </div>
     </div>
+
+    <div class="container text-center">
+        <div class="row">
+            <h3 class="pt-5">How it works</h3>
+            <p class="pt-2 pb-5">Start sipping your way to delicious Rewards.</p>
+            <div class="col">
+                <img src="https://www.starbucks.com/weblx/images/sr6-rewards/collect-stars.svg" alt="">
+                <h3>Collect Stars</h3>
+                <p>Earn Stars by making eligible purchases and participating in challenges, offers and games.</p>
+            </div>
+            <div class="col">
+                <img src="https://www.starbucks.com/weblx/images/sr6-rewards/free-treats.svg" alt="">
+                <h3>Enjoy free treats</h3>
+                <p>Redeem your Stars for free food, drinks and more. Look forward to a birthday treat on us every year.
+                </p>
+            </div>
+            <div class="col">
+                <img src="https://www.starbucks.com/weblx/images/sr6-rewards/unlock-benefits.svg" alt="">
+                <h3>Unlock benefits</h3>
+                <p>Keep earning Stars to increase your status and help you get to free faster. Discover more benefits at
+                    every level.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-light">
+                <div class="card card1" style="background-color:rgb(0, 97, 65);  height:750px; width: 350px">
+                    <ul>
+                        <h3>Green status</h3>
+                        <p>Less than 500★Stars earned each year</p>
+                        <li>Free treat on your birthday</li>
+                        <li>Earn 1★Star per $1 spent</li>
+                        <li>Free Mod Mondays—customize your drink once a month, on us</li>
+                        <li>Early access, personalized offers and games</li>
+                        <li>Bonus Stars for qualifying digital reloads to your Starbucks Card</li>
+                        <li>Double Stars with personal cup</li>
+                    </ul>
+                    <img src=" https://www.starbucks.com/weblx/images/sr6-rewards/benefits-backgrounds/green-bg.png"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card text-dark card1"
+                    style="background-color:rgb(204, 163, 88);  height: 750px; width: 350px;">
+                    <ul>
+                        <h3>Gold status</h3>
+                        <p>500+★Stars earned each year</p>
+                        <li>7 days to redeem your birthday treat</li>
+                        <li>Earn 1.2★Stars per $1 spent</li>
+                        <li>Stars won’t expire</li>
+                        <li>Free Mod Mondays—customize your drink once a month, on us</li>
+                        <li>Early access, personalized offers and games</li>
+                        <li>Bonus Stars for qualifying digital reloads to your Starbucks Card</li>
+                        <li>Double Stars with personal cup</li>
+                        <li>4 more Double Star Days per year</li>
+                    </ul>
+                    <img src="https://www.starbucks.com/weblx/images/sr6-rewards/benefits-backgrounds/gold-bg.png"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card text-light card1"
+                    style="background-color: rgb(23, 23, 23);  height: 750px; width: 350px;">
+                    <ul>
+                        <h3>Reserve status</h3>
+                        <h4>2,500+★Stars earned each year</h4>
+                        <li>30 days to redeem your birthday treat</li>
+                        <li>Earn 1.7★Stars per $1 spent</li>
+                        <li>Stars won’t expire</li>
+                        <li>Free Mod Mondays—customize your drink once a month, on us</li>
+                        <li>Early access, personalized offers and games</li>
+                        <li>Bonus Stars for qualifying digital reloads to your Starbucks Card</li>
+                        <li>Double Stars with personal cup</li>
+                        <li>Access to exclusive global coffee experiences</li>
+                        <li>A free personalized Reserve Card to mark your achievement</li>
+                        <li>6 more Double Star Days per year </li>
+                    </ul>
+                    <img src="https://www.starbucks.com/weblx/images/sr6-rewards/benefits-backgrounds/reserve-bg.png"
+                        alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="py-5" style="background-color: rgb(242, 232, 216); margin-top: 60px;">
+        <h2 class="text-center py-3">Get your favorites for free</h2>
+        <div class="d-flex justify-content-center"
+            style="gap: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;">
+            <span>25</span>
+            <span>60</span>
+            <span>100</span>
+            <span>200</span>
+            <span>300</span>
+            <span>400</span>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center py-5" style="background-color: rgb(242, 238, 230);">
+        <div class="order1">
+            <img src="https://cloudassets.starbucks.com/is/image/sbuxcorp/us-ca-60-tier-2x?fmt=png-alpha&scale=.75"
+                alt="">
+        </div>
+        <div class="order2">
+            <img src="https://www.starbucks.com/weblx/images/rewards/promo-badge-en.svg" alt=""
+                style="margin-left: -120px;">
+            <p style="padding-top: 100px; padding-left: 60px;">New! Up to $2 off your order.</p>
+        </div>
+    </div>
+
+
+    <div class="container" style="margin-top: 100px;">
+        <div class="row">
+            <h3 class="text-center">Partnerships</h3>
+            <p class="text-center">Link your accounts to unlock perks from our partners, all while earning more Stars.</p>
+            <div class="col-6">
+                <div class="card text-center" style="background-color: rgb(242, 238, 230);">
+                    <div class="card-body">
+                        <img src="https://cloudassets.starbucks.com/is/image/sbuxcorp/unauth-us-partnership-delta-2x?fmt=webp-alpha"
+                            alt="" class="card-img-top">
+                        <p>Link your Delta account to earn miles, Bonus Stars and access to exclusive offers.1</p>
+                        <a href="#" class="btn border-success text-success">View details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="card text-center" style="background-color: rgb(242, 238, 230);">
+                    <div class="card-body">
+                        <img src="https://cloudassets.starbucks.com/is/image/sbuxcorp/unauth-us-partnership-marriott-bonvoy-2x?fmt=webp-alpha"
+                            alt="" class="card-img-top">
+                        <p>Link your accounts to earn points, Bonus Stars and access to exciting member
+                            experiences.2</p>
+                        <a href="#" class="btn border-success text-success">View details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container" style="background-color: rgb(242, 232, 216); border-radius: 20px; padding: 30px 5px; margin-top: 30px;">
+         <div class="row align-items-center">
+            <div class="col-4">
+                <img src="https://www.starbucks.com/weblx/images/rewards/getting-started/sr6-get-started-en-US.png" alt="" style="border-radius: 20px; width: 300px;">
+            </div>
+            <div class="col text-center">
+                 <h3>Free to join, easy to get started</h3>
+                 <div class="d-flex"  style="column-gap: 10px;">
+                    <a href="">join now</a>
+                    <p>or</p>
+                    <a href="">download the app</a>
+                 </div>
+                 <div class="d-flex" style="column-gap:30px;">
+                    <figure>
+                        <img src="https://www.starbucks.com/weblx/images/rewards/getting-started/create-account.svg" alt="">
+                        <figcaption>Create an account</figcaption>
+                    </figure>
+                     <figure>
+                        <img src="https://www.starbucks.com/weblx/images/rewards/getting-started/earn-rewards.svg" alt="">
+                        <figcaption>Order and pay your way</figcaption>
+                    </figure>
+                     <figure>
+                        <img src="https://www.starbucks.com/weblx/images/rewards/getting-started/mop.svg" alt="">
+                        <figcaption>Earn Stars, get Rewards</figcaption>
+                    </figure>
+                 </div>
+            </div>
+         </div>
+    </div>
+<div>
+    <h2>Questions?</h2>
+    <p>We have answers. <a href="">Check out the FAQs</a></p>
+</div>
+
+
 </body>
 
 </html>
